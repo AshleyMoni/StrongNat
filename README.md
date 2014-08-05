@@ -1,0 +1,1 @@
+A fussier version of Nat.idr that uses dependent typing a bit more strictly.
