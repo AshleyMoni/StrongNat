@@ -13,7 +13,7 @@ pred' Z {ok} = FalseElim ok
 pred' (S n) = n
 
 (<<) : Nat -> Nat -> Type
-x << y = Exists (\d : Nat => S d + x = y)
+x << y = Exists (\d : Nat => S d + x = y) -- this should be Subset/witness, rather than Exists/evidence (for correct erasure)
 
 example : 3 << 6
 example = evidence 2 refl
